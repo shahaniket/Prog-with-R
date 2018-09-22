@@ -1,0 +1,49 @@
+---
+title: "R Markdown Task"
+author: "Aniket Shah 18200042"
+date: "21 September 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load the MASS package
+
+Loading **MASS** Package
+```{r}
+require(MASS)
+```
+
+# The shrimp dataset
+
+Loading **The Shrimp Dataset** from **MASS** Package
+```{r}
+shrimp <- MASS::shrimp
+shrimp
+```
+Description of **Shrimp Dataset** `help(shrimp)`
+```
+Percentage of Shrimp in Shrimp Cocktail
+
+Description
+
+A numeric vector with 18 determinations by different laboratories of the amount (percentage of the declared total weight) of shrimp in shrimp cocktail.
+
+Usage
+
+shrimp
+Source
+
+F. J. King and J. J. Ryan (1976) Collaborative study of the determination of the amount of shrimp in shrimp cocktail. J. Off. Anal. Chem. 59, 644???649.
+
+R. G. Staudte and S. J. Sheather (1990) Robust Estimation and Testing. Wiley.
+```
+
+# Plot
+
+Plotting the **Shrimp Dataset**
+```{r}
+plot(shrimp)
+```
